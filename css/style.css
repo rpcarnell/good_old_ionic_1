@@ -1,0 +1,81 @@
+/* Empty. Add your own CSS if you like */
+body
+{
+    background: #aaa;
+}
+ input.safeCheck:before
+{
+   border: none; 
+  
+}
+.loginbutton
+{
+    color: #fff;   
+    border-radius: 5px; 
+    background: #0099ff; 
+    padding: 10px; 
+    font-size: 15px;
+    border: 1px solid #0099ff;  
+}
+.loginoffline
+{
+   margin-top: 5px;
+   background: #999;  
+   color: #fff; 
+   border-radius: 5px; 
+   padding: 10px; 
+   
+   font-size: 15px;
+}
+.loginspan
+{
+    margin-bottom: 150px; margin-left: 50px; font-weight: bold;
+}
+.loginbutton:active
+{   
+   background: #fff;
+    color: #000;
+    border: 1px solid #aaa;   
+}
+
+.loginin
+{
+    display: table-cell;
+   vertical-align: middle;
+   height: 40px;
+   
+}
+.info, .signup
+{
+    border-radius: 6px; 
+    float: right; 
+   position: absolute;
+   bottom: 10px;
+   right: 8px;
+    padding-top: 25px; 
+    background: #fff; 
+    width: 70px; 
+    height: 70px; 
+    text-align: center;
+    
+}
+.signup
+{
+    left: 10px;
+    font-size: 20px;
+    background: #272727;
+    color: #0099ff;
+    width: 240px;
+    padding-top: 25px;
+}
+ .infoitem
+ { 
+     margin-top: 1px;
+     border-bottom: 1px solid #eee;
+     
+ }
+ .center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}

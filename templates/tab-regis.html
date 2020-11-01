@@ -1,0 +1,39 @@
+
+<ion-header-bar style="height: 45px; ">
+    <div style=" font-size: 18px; vertical-align: middle; height: 40px; padding-top: 5px;" ng-click="regback()" >Cancel</div>
+<div style="width: 100px;" class="center"><img src="img/FS24.png"  style="width: 38px; height: 40px;" />
+    </div></ion-header-bar>
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+       <div style="text-align: left;"><h2>Account Registration</h2>
+ </div>
+       
+
+  <div class="item item-input">
+    <span class="input-label" style="height: 20px; width: 17%; background: #fff;"><img style='width: 20px;' src="img/username_icon_2.png" /></span>
+    <input type="text" placeholder="username" ng-focus="checkFocus('xuser')" ng-model='val.user' ng-Keyup='userType() ' name='user' style="font-size: 16px;" />
+    <span style="margin-right: 15px; width: 40px; text-align: center; z-index: 999; margin-top: 8px;" ng-hide='xuser' ng-Click="clearRegUser()"><img style="height: 25px;" src="img/gray_cross.png" /></span>
+  </div> 
+
+    <div class="item item-input" style="margin-top: 8px;">
+    <span class="input-label" style="height: 14px; width: 17%;  background: #fff;"><img style='margin-top:8px; width: 30px;' src="img/key_icon_2.png" /></span>
+    <input type="password"  ng-focus="checkFocus('xpassReg')" ng-model='val.password' ng-Keyup='passwordType()' placeholder="password" style="font-size: 16px;" />
+  <span style="margin-right: 15px;  width: 40px; text-align: center; z-index: 999; margin-top: 8px;" ng-hide='xpassReg' ng-Click="clearRegPass()"><img style="height: 25px;" src="img/gray_cross.png" /></span></div>
+  
+
+    <div class="item item-input" style="margin-top: 8px;">
+    <span class="input-label" style="height: 14px; width: 17%;  background: #fff;"><img style='margin-top:8px; width: 30px;' src="img/key_icon_2.png" /></span>
+    <input type="password" ng-focus="checkFocus('xpassReg_2')" ng-model='val.password_2' ng-Keyup='passwordType_2()' placeholder="confirm password" style="font-size: 16px;" />
+  <span style="margin-right: 15px;  width: 40px; text-align: center; z-index: 999; margin-top: 8px;" ng-hide='xpassReg_2' ng-Click="clearRegPass_2()"><img style="height: 25px;" src="img/gray_cross.png" /></span></div>
+  
+ <div class="item item-input" style="margin-top: 8px;">
+    <span class="input-label" style="height: 20px; width: 17%; background: #fff;"><img style='width: 30px;' src="img/email.png" /></span>
+    <input type="text" placeholder="e-mail address" ng-focus="checkFocus('email')" ng-model='val.email' ng-Keyup='emailType() ' name='user' style="font-size: 16px;" />
+    <span style="margin-right: 15px; width: 40px; text-align: center; z-index: 999; margin-top: 6px;" ng-hide='xemail' ng-Click="clearEmail()"><img style="height: 25px;" src="img/gray_cross.png" /></span>
+  </div> 
+<div style="margin-top: 12px; font-size: 14px;">By clicking on "Create New Account", you are agreeiung to our Terms of Service</div>
+   
+   <div class='loginbutton' style="margin-top: 10px;" ng-Click="register()"><span style="float: left;margin-top: -5px;"><img ng-src="{{loginimage}}" style="height: 30px;" /></span><span class="loginspan">Create New Account</span><img style="margin-top: -2px; float: right; height: 25px;" src="img/arrow.png" /></div>
+ 
+    </ion-content>
+</ion-view>

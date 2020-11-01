@@ -1,0 +1,58 @@
+
+<ion-view view-title="Dashboard">
+  <ion-content class="padding" ng-init="formInit()" style="overflow: hidden;">
+    <div style='text-align: center; position: relative; width: 320px; margin: 10px auto;'>
+      <img src="img/FS24_TextLogo.png" style="height: 70px;" />
+     </div>
+<div class="list" style="margin-top: 20px; margin-bottom: 5px;">
+  <div class="item item-input">
+    <span class="input-label" style="height: 20px; width: 17%; background: #fff;"><img style='width: 20px;' src="img/username_icon_2.png" /></span>
+    <input type="text" placeholder="username" ng-model='val.user' ng-Keyup='userType() ' name='user' style="font-size: 16px;" />
+    <span style="margin-right: 15px; width: 40px; text-align: center; z-index: 999; margin-top: 8px;" ng-hide='xuser' ng-Click="clearUser()"><img style="height: 25px;" src="img/gray_cross.png" /></span>
+  </div> 
+  <div class="item item-input" style="margin-top: 8px;">
+    <span class="input-label" style="height: 14px; width: 17%;  background: #fff;"><img style='margin-top:8px; width: 30px;' src="img/key_icon_2.png" /></span>
+    <input type="password" ng-model='val.password' ng-Keyup='passwordType()' placeholder="password" style="font-size: 16px;" />
+  <span style="margin-right: 15px;  width: 40px; text-align: center; z-index: 999; margin-top: 8px;" ng-hide='xpassword' ng-Click="clearPassword()"><img style="height: 25px;" src="img/gray_cross.png" /></span></div>
+  
+
+  
+</div >
+
+<table style="width: 100%; margin-top: 10px;">
+<tr>
+<td style="width: 50px;">
+  <label class="checkbox item" style='float: left;  padding-top: 5px;'>
+   <input type="checkbox" ng-click="changeRemember()" ng-model="rememberUser" class='safeCheck' style='  border: 2px solid #999;'>
+</label>
+
+</td>
+<td style="width: 5px;"></td>
+<td style="background: #fff; padding: 0px;">
+    <div class="item item-input" style='margin-bottom: 10px; margin-left: 10px; padding: 0px; background: none; color: #0099ff; float:left;'>Remember Username</div>
+  </td>
+
+</tr>
+</table>
+
+ 
+    
+<div class='loginbutton' style="margin-top: 10px;" ng-Click="login()"><span style="float: left;margin-top: -5px;"><img ng-src="{{loginimage}}" style="height: 30px;" /></span><span class="loginspan">Login</span><img style="margin-top: -2px; float: right; height: 25px;" src="img/arrow.png" /></div>
+ 
+<div ng-Click="loginOffline()" class="loginoffline"><span style="float: left;margin-top: -5px;"><img ng-src="{{offlogin_image}}" style=" height: 30px; " /></span><span class="loginspan">Login Offline</span><img style="margin-top: -2px; float: right; height: 25px;" src="img/arrow.png" /></div>
+  <div style="clear: both;"></div>
+
+<div style="z-index: 999; position: relative; height: {{heightpx}};">
+
+<div class="signup" ng-show="userAlreadySignUp()" ng-click="signup()">Sign Up <img style="margin-top: -2px; margin-right: 20px; float: right; height: 25px;" src="img/arrow.png" /></div>
+  
+  <div class="info" ng-click="infopage()">
+    <img style="height: 18px; width: 5px;" ng-src="img/i_icon.png" />
+    </div>
+
+ </div>
+
+  </ion-content>
+
+
+</ion-view>
